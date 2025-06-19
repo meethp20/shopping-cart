@@ -43,3 +43,5 @@ get the fake data from chat gpt
 get the the slug components overlay the home component to display 
 create a function to calculate discount based on luck as in 60 percent chance
 create a function to calculate the total in the cart
+setting up authentication and user System and saving data for all users
+billing page displaying all items of the items[] and making sure it all connects
