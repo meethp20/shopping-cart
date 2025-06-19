@@ -1,4 +1,4 @@
-interface item{
+export interface item{
     name:string;
     price : number;
     description?:string;
