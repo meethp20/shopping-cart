@@ -1,3 +1,4 @@
+'use client'
 import { item } from "../types/type";
 
 export default function itemCard({itemData}:{itemData:item}){
