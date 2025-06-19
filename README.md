@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+get the home page displaying things and pass the card components w fake data 
+also create a search component with navbar 
+create a card component for displaying a card 
+get the fake data from chat gpt 
+get the the slug components overlay the home component to display 
+create a function to calculate discount based on luck as in 60 percent chance
+create a function to calculate the total in the cart
