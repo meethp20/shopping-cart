@@ -45,3 +45,5 @@ create a function to calculate discount based on luck as in 60 percent chance
 create a function to calculate the total in the cart
 setting up authentication and user System and saving data for all users
 billing page displaying all items of the items[] and making sure it all connects
+create a cart component too
+how to make the thing where it says add to card and when i press the button the the card is added to the list of 
