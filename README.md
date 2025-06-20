@@ -37,9 +37,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 get the home page displaying things and pass the card components w fake data 
-also create a search component with navbar 
-create a card component for displaying a card 
-get the fake data from chat gpt 
+also create a search component with navbar ✅
+create a card component for displaying a card ✅
+get the fake data from chat gpt ✅
 get the the slug components overlay the home component to display 
 create a function to calculate discount based on luck as in 60 percent chance
 create a function to calculate the total in the cart
