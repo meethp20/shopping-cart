@@ -1,7 +1,7 @@
 'use client'
 import { item } from "../types/type";
 
-export default function itemCard({itemData}:{itemData:item}){
+export default function ItemCard({itemData}:{itemData:item}){
     return(
         <div>
             <div>
@@ -13,6 +13,12 @@ export default function itemCard({itemData}:{itemData:item}){
         </div>
         <div>
             {itemData.description}
+        </div>
+        <div>
+            <button onClick={}>
+               Add
+            </button>
+
         </div>
         </div>
     )
