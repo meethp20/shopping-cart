@@ -1,7 +1,10 @@
 'use client'
 import { item } from "../types/type";
-
+import { useCartStore } from "../store/cartStore";
 export default function ItemCard({itemData}:{itemData:item}){
+const addToCart = useCartStore((state)=>state.addToCart)
+
+
     return(
         <div>
             <div>
@@ -15,7 +18,7 @@ export default function ItemCard({itemData}:{itemData:item}){
             {itemData.description}
         </div>
         <div>
-            <button onClick={}>
+            <button onClick={()=>addToCart(itemData)}>
                Add
             </button>
 

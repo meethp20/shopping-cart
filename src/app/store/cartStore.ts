@@ -5,7 +5,10 @@ type cartState = {
     cart : item[]
     addToCart : (product:item) => void
     removeFromCart : (id:string) => void 
+    increaseQuantity:(id:string)=>void
+    decreaseQuantity:(id:string)=>void
     cleanCart:()=>void
+
 }
 
 export const useCartStore  = create< cartState>((set)=>({
@@ -18,7 +21,18 @@ export const useCartStore  = create< cartState>((set)=>({
         set((state)=>({
             cart:state.cart.filter((p)=>p.name!==id),
         })),
-        cleanCart: ()=>set({cart: []});
+        increaseQuantity:(id)=>
+            set((state)=>({
+                cart:state.cart.map((p)=>
+                p.name===id?{...p,quantity:p.quantity+1}:p),
+            })),
+        decreaseQuantity:(id)=>
+            set((state)=>({
+                cart:state.cart.map((p)=>
+                    p.name===id?{...p,quantity:p.quantity-1}:p
+                ),
+            })),
+        cleanCart: ()=>set({cart: []}),
     }
 )
 )

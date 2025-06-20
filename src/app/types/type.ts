@@ -1,5 +1,6 @@
  export interface item{
     name:string;
+
     price : number;
     description?:string;
     quantity : 1 | number;

@@ -2,7 +2,7 @@
 import { products } from "../data/products"
 import { useState } from "react"
 import { item } from "../types/type"
-import itemCard from "./Card"
+import ItemCard from "./Card"
 export default function Search(){
     const [searchN,setSeatchN] = useState("")
     const [searchList,setSearchList] = useState<item[]>([])
@@ -25,7 +25,7 @@ export default function Search(){
                     searchList.map((value,index)=>{
                         return(
                             <div key={index}>
-                                {itemCard(value)}
+                              <ItemCard itemData={value}/>
                             </div>
                         )
                     })

@@ -5,15 +5,20 @@ import Search from "../components/Search"
 export default function LandingPage(){
     return(
          <div>
-           <div>
-                <div>
-                    <h1>Market<span className="text-Red">Place</span></h1>
+               <div>
+                    <h1></h1>
+                    <button >Sign In</button>
+                </div>
+                <Search / > 
+              <div>
+                    <h1></h1>
                     <button >Sign In</button>
                 </div>
                 <Search / > 
                 <div>
                    <List /> 
                 </div>
+               
             </div> 
              
 
