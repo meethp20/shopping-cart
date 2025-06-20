@@ -13,8 +13,6 @@ export default function Search(){
     } )
     setSearchList(List);
   }
-    
-    
 
     return(
         <div>
