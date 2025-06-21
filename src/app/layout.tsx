@@ -4,6 +4,7 @@ import "./globals.css";
 import { useAuthStore } from "./store/authStore";
 import { supabase } from "./lib/supabaseClient";
 import { useEffect } from "react";
+import { setEngine } from "crypto";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,23 +28,26 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) 
-  useEffect(()=>{
+}>) {
+
+
+  const setUser = useAuthStore((s)=>s.setUser)
+    useEffect(()=>{
     supabase.auth.getSession().then(({data})=>{
-       setUser(session?.user??null)
+       setUser(data.session?.user??null)
     })
-    return()=>{
-      listener?.subsciption.unsubscribe()
+    const {data:listener} = supabase.auth.onAuthStateChange ((_event,session)=>{
+      setUser(session?.user??null)
+    }) 
+     return()=>{
+      listener?.subscription.unsubscribe();
     }
   },[setUser])
-
-
-
-
-{
   return (
-    <html lang="en">
-      <body
+  <html lang="en">
+      
+ 
+    <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
@@ -51,3 +55,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
