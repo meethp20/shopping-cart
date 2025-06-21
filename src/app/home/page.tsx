@@ -10,12 +10,7 @@ export default function LandingPage(){
                     <button >Sign In</button>
                 </div>
                 <Search / > 
-              <div>
-                    <h1></h1>
-                    <button >Sign In</button>
-                </div>
-                <Search / > 
-                <div>
+             <div>
                    <List /> 
                 </div>
                

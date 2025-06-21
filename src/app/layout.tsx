@@ -4,7 +4,6 @@ import "./globals.css";
 import { useAuthStore } from "./store/authStore";
 import { supabase } from "./lib/supabaseClient";
 import { useEffect } from "react";
-import { setEngine } from "crypto";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
