@@ -7,7 +7,6 @@ type cartState = {
     removeFromCart : (id:string) => void 
     increaseQuantity:(id:string)=>void
     decreaseQuantity:(id:string)=>void
-    total:(productArr:item[])=>void 
     cleanCart:()=>void
 
 }
@@ -33,11 +32,6 @@ export const useCartStore  = create< cartState>((set)=>({
                     p.name===id?{...p,quantity:p.quantity-1}:p
                 ),
             })),
-            total:(productArr)=>
-                set((state))=>({
-                    cart:state.cart.map((p))=>
-                        
-                })
         cleanCart: ()=>set({cart: []}),
     }
 )
