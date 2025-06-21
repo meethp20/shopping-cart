@@ -7,7 +7,7 @@ export default function List(){
                {
                 products.map((value,index)=>{
                     return(
-                        <div>
+                        <div className="grid grid-cols-3" key={index}>
                             <ItemCard itemData={value}/>
                         </div>
                     )

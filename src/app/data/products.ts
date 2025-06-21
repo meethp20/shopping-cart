@@ -1,6 +1,7 @@
 import { item } from "../types/type";
 
 
+
 export const products: item[] = [
   { name: "iPhone 15 834", price: 125999, quantity: 1, description: "Phones product with high-quality features.", imageUrl: "/images/iphone_15.jpg" },
   { name: "MacBook Pro M3 452", price: 149999, quantity: 1, description: "Laptops product with high-quality features.", imageUrl: "/images/macbook_pro_m3.jpg" },
