@@ -9,3 +9,6 @@ export function AddToCart(){
 export function calTotal(cart:item[]){
     return cart.reduce((sum,item)=>sum+item.price*item.quantity,0)
 }
+export function AddToWishList(product:item){
+    
+}
