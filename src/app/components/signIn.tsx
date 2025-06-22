@@ -6,5 +6,5 @@ export default function signInButton(){
         })
         if(error) console.log("Error loggin in ", error.message)
     }
-return <button onClick={handleLogin} className="g-blue-500 text-white p-2 rounded">Sign In</button>
+return <button onClick={handleLogin} className="bg-blue-500 text-white p-2 rounded">Sign In</button>
 }

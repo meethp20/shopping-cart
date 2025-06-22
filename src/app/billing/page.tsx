@@ -1,7 +1,8 @@
+'use client'
 
 import { useCartStore } from "../store/cartStore"
 
-export default function(){
+export default function BillingPage(){
     const cart = useCartStore((s)=>s.cart)
     return(
         <div>
